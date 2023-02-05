@@ -1,0 +1,17 @@
+
+<ul>
+    {% for url in urls %}
+        <!-- <li>{{ url.original_url}}</li>
+        <li>{{ url.number_clicks }}</li>
+        <li>{{ url.hash }}</li> -->
+        <p><br>
+            <span class="nowrap"><b>Original version:</b> {{ url.original_url }}</span><br>
+            <span class="nowrap"><b>Short version:</b> http://127.0.0.1:8000/{{ url.hash }}</span><br>
+            <span class="nowrap"><b>Number of clicks:</b> {{ url.number_clicks}}</span><br>
+          </p>
+    {% endfor %}
+    <li><a href="{% url 'short_url' %}">Main menu</a></li>
+    </ul>
+
+
+        

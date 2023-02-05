@@ -1,0 +1,7 @@
+<form action="" method="post">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" value="Short">
+</form>
+
+<li><a href="{% url 'click_statistics' %}">Click statistics</a></li>
