@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: CI process started
-      run: echo "CI PROCESS STARTED"
+      run: echo "CI PROCESS STARTED v2"
     
     - name: Checkout code
       uses: actions/checkout@v2
